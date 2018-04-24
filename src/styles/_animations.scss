@@ -1,0 +1,35 @@
+@keyframes fadeInBounceOut {
+    0% {
+      opacity: 0;
+      transform: translate3d($position-margin, 0, 0);
+    }
+
+    5% {
+        opacity: .85;
+    }
+
+    12% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    
+    85% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translate3d(-$position-margin, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(2000px, 0, 0);
+    }
+}
+    
+.toast-in {
+    animation-name: fadeInBounceOut;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}

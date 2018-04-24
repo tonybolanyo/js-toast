@@ -1,8 +1,8 @@
 .toast-container {
     width: $min-width;
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: $position-margin;
+    right: $position-margin;
     z-index: 1;
 }
 
@@ -10,8 +10,8 @@
     background-color: $default-background-color;
     color: $default-text-color;
     padding: 1rem;
+    margin: .5rem;
     position: relative;
-    bottom: $position-margin;
 }
 
 .toast-title {

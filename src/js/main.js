@@ -8,13 +8,13 @@ setTimeout(()=>{
 }, 500);
 setTimeout(()=>{
     toast.warning('Un toast de prueba con este mensaje', 'con título');
-}, 800);
+}, 900);
 setTimeout(()=>{
     toast.error('Un toast de prueba con este mensaje', 'con título');
-}, 1200);
+}, 1600);
 setTimeout(()=>{
     toast.success('Un toast de prueba con este mensaje', 'con título');
-}, 1500);
+}, 2000);
 
 let counter = 0;
 const btn = document.getElementById('toast-sample');
