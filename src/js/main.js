@@ -3,12 +3,22 @@ import Toast from './toast';
 const toast = new Toast();
 toast.init();
 toast.show('Un toast de prueba con este mensaje', 'con título');
-toast.info('Un toast de prueba con este mensaje', 'con título');
-toast.warning('Un toast de prueba con este mensaje', 'con título');
-toast.error('Un toast de prueba con este mensaje', 'con título');
-toast.success('Un toast de prueba con este mensaje', 'con título');
+setTimeout(()=>{
+    toast.info('Un toast de prueba con este mensaje', 'con título');
+}, 500);
+setTimeout(()=>{
+    toast.warning('Un toast de prueba con este mensaje', 'con título');
+}, 800);
+setTimeout(()=>{
+    toast.error('Un toast de prueba con este mensaje', 'con título');
+}, 1200);
+setTimeout(()=>{
+    toast.success('Un toast de prueba con este mensaje', 'con título');
+}, 1500);
 
+let counter = 0;
 const btn = document.getElementById('toast-sample');
 btn.addEventListener('click', () => {
-    toast.show('ka ldaj ldkajlkd jalkjdlakjdlakjdlaj dlajd al d', 'lkaj dklajsd');
+    counter++;
+    toast.show(`A sample message which counter value is ${counter}`, `Message #${counter}`);
 })

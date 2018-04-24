@@ -1,18 +1,47 @@
 $min-width: 250px;
-$default-background-color: #333;
-$default-text-color: #eee;
 $position-margin: 2rem;
 
+$default-background-color: #454d5d;
+$default-text-color: #eee;
+
+$success-bg-color: #32b643;
+$info-bg-color: #5755d9;
+$warning-bg-color: #ffb700;
+$error-bg-color: #e85600;
+
+
+.toast-container {
+    width: $min-width;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1;
+}
 
 .toast {
     background-color: $default-background-color;
     color: $default-text-color;
-    min-width: $min-width;
-    margin-left: $min-width / 2;
     padding: 1rem;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
+    position: relative;
     bottom: $position-margin;
 }
 
+.toast-title {
+    font-weight: bold;
+}
+
+.toast-success {
+    background-color: $success-bg-color;
+}
+
+.toast-info {
+    background-color: $info-bg-color;
+}
+
+.toast-warning {
+    background-color: $warning-bg-color;
+}
+
+.toast-error {
+    background-color: $error-bg-color;
+}

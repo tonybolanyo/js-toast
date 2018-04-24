@@ -30,7 +30,7 @@ export default class Toast {
 
     createToast(message, title, cssClass) {
         const toast = document.createElement('div');
-        toast.classList.add(cssClass, CSS_IN);
+        toast.classList.add(CSS_DEFAULT, cssClass, CSS_IN);
         toast.style.animationDuration = `${(this.options.duration / 1000)}s`;
         if (title) {
             const titleElem = document.createElement('div');
