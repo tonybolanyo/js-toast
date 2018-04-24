@@ -12,10 +12,13 @@
     padding: 1rem;
     margin: .5rem;
     position: relative;
+    font-family: $toast-font-family;
+    font-size: $toast-font-size;
 }
 
 .toast-title {
     font-weight: bold;
+    margin-bottom: .5rem;
 }
 
 .toast-success {
