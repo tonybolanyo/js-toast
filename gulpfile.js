@@ -32,7 +32,7 @@ console.log("Output folder:", distFolder);
 gulp.task("default", ["html", "build"], function() {
     browserSync.init({
         server: {
-            baseDir: gistFolder
+            baseDir: distFolder
         }
     });
 
@@ -51,8 +51,6 @@ gulp.task("build", ["sass", "js"]);
 // compile html files
 gulp.task("html", function () {
     gulp.src("src/*.html")
-        // process template
-        .pipe(twig())
         // minimize html files
         .pipe(htmlmin({
             collapseWhitespace: true

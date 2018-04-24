@@ -11,8 +11,8 @@
     "url": "git+https://github.com/tonybolanyo/js-toast.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Tony G. Bolaño",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tonybolanyo/js-toast/issues"
   },
@@ -23,7 +23,7 @@
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
     "browser-sync": "^2.23.6",
-    "browserify": "^16.1.1",
+    "browserify": "^16.2.0",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-buffer": "0.0.2",
@@ -36,9 +36,9 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-tap": "^1.0.1",
     "gulp-template": "^5.0.0",
-    "gulp-twig": "^1.2.0",
     "gulp-uglify": "^3.0.0",
     "postcss-scss": "^1.0.4",
     "stylelint": "^9.1.3"
-  }
+  },
+  "dependencies": {}
 }
